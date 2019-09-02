@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ndroid="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/card_view"
+    ndroid:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="320dp"
+            android:id="@+id/img_item_photo"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            android:src="@color/colorAccent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_name"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/img_item_photo"
+            android:layout_toRightOf="@+id/img_item_photo"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="@string/headset_name"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_item_name"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_toEndOf="@+id/img_item_photo"
+            android:layout_toRightOf="@+id/img_item_photo"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="@string/description" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
